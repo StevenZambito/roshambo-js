@@ -9,12 +9,13 @@
   </head>
   <body>
     <header>
-      <h1 class="rps-title">Rock Paper Sabers</h1>
+      <h1 class="rps-title">Rock Paper Sabers Lizard Yoda</h1>
     </header>
 
     <main class="player-computer">
       <div class="sides">
         <h2 class="player-title">Player 1</h2>
+        <h3 class="p1-chosen">Chosen: -</h3>
 
         <button class="player rock-player">
           <img
@@ -53,22 +54,37 @@
       </div>
 
       <div class="versus">
-        <p class="results-text">
+        <ul>
+          <li>Sabers cuts Paper</li>
+          <li>Paper covers Rock</li>
+          <li>Rock crushes Lizard</li>
+          <li>Lizard poisons Yoda</li>
+          <li>Yoda smashes Sabers</li>
+          <li>Sabers decapitates Lizard</li>
+          <li>Lizard eats Paper</li>
+          <li>Paper disproves Yoda</li>
+          <li>Yoda vaporizes Rock</li>
+          <li>(and as it always has) Rock crushes Sabers</li>
+        </ul>
+        <div class="results-text">
           <img
             src="https://i.gifer.com/3PvG.gif"
             width="300px"
             style="border: solid #ffe81f"
           />
-        </p>
+        </div>
         <p class="results-texts">Choose!</p>
         <div class="reset-button">
           <button class="reset">Reset</button>
-          <a href="/index.html">Standard Game</a>
+        </div>
+        <div>
+          <button><a href="/index.html">Standard Game</a></button>
         </div>
       </div>
 
       <div class="sides">
         <h2 class="computer-title">Player 2</h2>
+        <h3 class="p2-chosen">Chosen: -</h3>
         <button class="player-two rock-p2">
           <img
             class="pics"
@@ -127,6 +143,6 @@
       </div>
     </main>
 
-    <script src="/main.js" charset="utf-8"></script>
+    <script src="/game2.js" charset="utf-8"></script>
   </body>
 </html>

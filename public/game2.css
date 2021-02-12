@@ -40,7 +40,7 @@ body {
 .versus {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .player-title {
@@ -135,4 +135,21 @@ body {
   margin: 0px;
   box-shadow: 0 0 5px 5px rgb(55, 132, 214);
   transform: scale(1.05) perspective(1px);
+}
+
+ul {
+  list-style: none;
+  color: #ffe81f;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  line-height: 1.2rem;
+}
+
+h3 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
