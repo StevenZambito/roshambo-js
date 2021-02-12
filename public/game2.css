@@ -13,18 +13,16 @@ body {
 }
 
 .pics {
-  height: 160px;
-  width: 160px;
+  height: 100px;
+  width: 100px;
 }
 
 .rps-title {
   text-align: center;
-  font-size: 60px;
-  border: solid;
+  font-size: 2rem;
   color: #ffe81f;
   margin: 0;
-  margin-top: 20px;
-  padding-top: 0.3rem 0rem 0.3rem 0rem;
+  margin-top: 1rem;
 }
 
 .player-computer {
@@ -50,8 +48,9 @@ body {
   border: solid;
   background-color: rgb(55, 132, 214);
   color: #ffe81f;
-  font-size: 30px;
+  font-size: 1.5rem;
   border-radius: 5px;
+  margin-top: 0;
   padding: 0.2rem;
 }
 
@@ -72,9 +71,10 @@ body {
   border: solid;
   background-color: rgb(229, 17, 21);
   color: #ffe81f;
-  font-size: 30px;
+  font-size: 1.5rem;
   border-radius: 5px;
   padding: 0.2rem;
+  margin-top: 0;
 }
 
 .reset {
@@ -101,58 +101,31 @@ body {
   justify-content: center;
 }
 
-.rock-player {
+.player {
   margin: 3px;
   border: 1px solid rgb(55, 132, 214);
   cursor: pointer;
 }
 
-.rock-player:hover {
+.player:hover {
   margin: 0px;
   box-shadow: 0 0 5px 5px rgb(55, 132, 214);
   transform: scale(1.05) perspective(1px);
 }
 
-.paper-player {
+.player-two {
   margin: 3px;
-  border: 1px solid rgb(55, 132, 214);
+  border: 1px solid rgb(229, 17, 21);
   cursor: pointer;
 }
 
-.paper-player:hover {
+.player-two:hover {
   margin: 0px;
-  box-shadow: 0 0 5px 5px rgb(55, 132, 214);
+  box-shadow: 0 0 5px 5px rgb(229, 17, 21);
   transform: scale(1.05) perspective(1px);
 }
 
-.scissors-player {
-  margin: 3px;
-  border: 1px solid rgb(55, 132, 214);
-  cursor: pointer;
-}
-
-.scissors-player:hover {
-  margin: 0px;
-  box-shadow: 0 0 5px 5px rgb(55, 132, 214);
-  transform: scale(1.05) perspective(1px);
-}
-
-.rock-computer {
-  margin: 3px;
-  border: 1px solid rgb(229, 17, 21);
-}
-
-.paper-computer {
-  margin: 3px;
-  border: 1px solid rgb(229, 17, 21);
-}
-
-.scissors-computer {
-  margin: 3px;
-  border: 1px solid rgb(229, 17, 21);
-}
-
-.computer-border {
+.p2-border {
   margin: 0px;
   box-shadow: 0 0 5px 5px rgb(229, 17, 21);
   transform: scale(1.05) perspective(1px);
