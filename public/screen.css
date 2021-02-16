@@ -6,10 +6,17 @@ html {
   height: 100%;
 }
 
+@font-face {
+  font-family: 'starwarsfont';
+  src: url('./assets/Starjedi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   background-image: url(https://cdn.mos.cms.futurecdn.net/rXQiLcfc89vp3EbYQ58ERH-1200-80.jpeg);
-  font-family: 'Pathway Gothic One', sans-serif;
+  font-family: 'starwarsfont';
 }
 
 .pics {
@@ -19,11 +26,10 @@ body {
 
 .rps-title {
   text-align: center;
-  font-size: 60px;
-  border: solid;
+  font-size: 3.5rem;
   color: #ffe81f;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 0.3rem;
   padding-top: 0.3rem 0rem 0.3rem 0rem;
 }
 
@@ -68,6 +74,10 @@ body {
   margin-top: 0;
 }
 
+.choose {
+  margin-bottom: 0;
+}
+
 .computer-title {
   text-align: center;
   border: solid;
@@ -88,7 +98,32 @@ body {
   cursor: pointer;
   margin: 3px;
   background-color: rgb(135, 220, 90);
-  font-family: 'Pathway Gothic One', sans-serif;
+  font-family: 'starwarsfont';
+}
+
+.reset:hover {
+  margin: 0px;
+  transform: scale(1.05) perspective(1px);
+  box-shadow: 0 0 5px 5px rgb(135, 220, 90);
+}
+
+.version-two-game {
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 3px;
+  font-family: 'starwarsfont';
+  background-color: rgb(55, 132, 214);
+}
+
+.version-two-game:hover {
+  margin: 0px;
+  transform: scale(1.05) perspective(1px);
+  box-shadow: 0 0 5px 5px rgb(55, 132, 214);
 }
 
 .reset:hover {
@@ -98,14 +133,14 @@ body {
 }
 
 .reset-button {
-  display: flex;
-  justify-content: center;
+  margin: 15px;
 }
 
 .rock-player {
   margin: 3px;
-  border: 1px solid rgb(55, 132, 214);
+  border: 2.5px solid rgb(55, 132, 214);
   cursor: pointer;
+  background-color: white;
 }
 
 .rock-player:hover {
@@ -116,8 +151,9 @@ body {
 
 .paper-player {
   margin: 3px;
-  border: 1px solid rgb(55, 132, 214);
+  border: 2.5px solid rgb(55, 132, 214);
   cursor: pointer;
+  background-color: white;
 }
 
 .paper-player:hover {
@@ -128,8 +164,9 @@ body {
 
 .scissors-player {
   margin: 3px;
-  border: 1px solid rgb(55, 132, 214);
+  border: 2.5px solid rgb(55, 132, 214);
   cursor: pointer;
+  background-color: white;
 }
 
 .scissors-player:hover {
@@ -140,17 +177,20 @@ body {
 
 .rock-computer {
   margin: 3px;
-  border: 1px solid rgb(229, 17, 21);
+  border: 2.5px solid rgb(229, 17, 21);
+  background-color: white;
 }
 
 .paper-computer {
   margin: 3px;
-  border: 1px solid rgb(229, 17, 21);
+  border: 2.5px solid rgb(229, 17, 21);
+  background-color: white;
 }
 
 .scissors-computer {
   margin: 3px;
-  border: 1px solid rgb(229, 17, 21);
+  border: 2.5px solid rgb(229, 17, 21);
+  background-color: white;
 }
 
 .computer-border {
@@ -163,4 +203,9 @@ body {
   margin: 0px;
   box-shadow: 0 0 5px 5px rgb(55, 132, 214);
   transform: scale(1.05) perspective(1px);
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }

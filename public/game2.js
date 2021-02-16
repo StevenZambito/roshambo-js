@@ -2,7 +2,7 @@ function main() {
   let playerOneChoice
   let playerTwoChoice
 
-  // Player One chooses ROCK
+  // Player ONE chooses ROCK
 
   const playerOneClickRock = () => {
     playerOneChoice = 'rock'
@@ -16,7 +16,7 @@ function main() {
   const playerOneChoosesRock = document.querySelector('.rock-player')
   playerOneChoosesRock.addEventListener('click', playerOneClickRock)
 
-  // Player One chooses PAPER
+  // Player ONE chooses PAPER
 
   const playerOneClickPaper = () => {
     playerOneChoice = 'paper'
@@ -30,7 +30,7 @@ function main() {
   const playerOneChoosesPaper = document.querySelector('.paper-player')
   playerOneChoosesPaper.addEventListener('click', playerOneClickPaper)
 
-  // Player One chooses SCISSORS
+  // Player ONE chooses SCISSORS
 
   const playerOneClickScissors = () => {
     playerOneChoice = 'scissors'
@@ -45,7 +45,7 @@ function main() {
   const playerOneChoosesScissors = document.querySelector('.scissors-player')
   playerOneChoosesScissors.addEventListener('click', playerOneClickScissors)
 
-  // Player One Chooses LIZARD
+  // Player ONE chooses LIZARD
 
   const playerOneClickLizard = () => {
     playerOneChoice = 'lizard'
@@ -60,7 +60,7 @@ function main() {
   const playerOneChoosesLizard = document.querySelector('.lizard-player')
   playerOneChoosesLizard.addEventListener('click', playerOneClickLizard)
 
-  // Player One Chooses YODA
+  // Player ONE chooses YODA
 
   const playerOneClickYoda = () => {
     playerOneChoice = 'yoda'
@@ -75,7 +75,7 @@ function main() {
   const playerOneChoosesYoda = document.querySelector('.yoda-player')
   playerOneChoosesYoda.addEventListener('click', playerOneClickYoda)
 
-  // Player Two Chooses ROCK
+  // Player TWO chooses ROCK
 
   const playerTwoClickRock = () => {
     playerTwoChoice = 'rock'
@@ -90,7 +90,7 @@ function main() {
   const playerTwoChoosesRock = document.querySelector('.rock-p2')
   playerTwoChoosesRock.addEventListener('click', playerTwoClickRock)
 
-  // Player  Two chooses PAPER
+  // Player TWO chooses PAPER
 
   const playerTwoClickPaper = () => {
     playerTwoChoice = 'paper'
@@ -104,7 +104,7 @@ function main() {
   const playerTwoChoosesPaper = document.querySelector('.paper-p2')
   playerTwoChoosesPaper.addEventListener('click', playerTwoClickPaper)
 
-  // Player Two chooses SCISSORS
+  // Player TWO chooses SCISSORS
 
   const playerTwoClickScissors = () => {
     playerTwoChoice = 'scissors'
@@ -119,7 +119,7 @@ function main() {
   const playerTwoChoosesScissors = document.querySelector('.scissors-p2')
   playerTwoChoosesScissors.addEventListener('click', playerTwoClickScissors)
 
-  // Player Two Chooses LIZARD
+  // Player TWO chooses LIZARD
 
   const playerTwoClickLizard = () => {
     playerTwoChoice = 'lizard'
@@ -134,7 +134,7 @@ function main() {
   const playerTwoChoosesLizard = document.querySelector('.lizard-p2')
   playerTwoChoosesLizard.addEventListener('click', playerTwoClickLizard)
 
-  // Player Two Chooses YODA
+  // Player TWO chooses YODA
 
   const playerTwoClickYoda = () => {
     playerTwoChoice = 'yoda'
@@ -149,7 +149,7 @@ function main() {
   const playerTwoChoosesYoda = document.querySelector('.yoda-p2')
   playerTwoChoosesYoda.addEventListener('click', playerTwoClickYoda)
 
-  // Player chooses RESET GAME
+  // RESET GAME
 
   const playerClickReset = () => {
     playerOneChoice = ''
@@ -191,13 +191,13 @@ function main() {
   // Declare Winner
 
   const declareWinner = () => {
-    // Rock
+    // Player One chooses Rock
     if (playerOneChoice === 'rock' && playerTwoChoice === 'rock') {
       document.querySelector('.rock-player').classList.add('player-border')
       document.querySelector('.rock-p2').classList.add('p2-border')
       document.querySelector('.results-text').innerHTML =
         '<img src="https://i.pinimg.com/originals/98/58/a0/9858a0097510206aaff4c3aeafe32e3d.gif" width="300px" style="border: solid #FFFFFF">'
-      document.querySelector('.results-texts').innerHTML = "It's a tie!"
+      document.querySelector('.results-texts').innerHTML = 'Tie!'
     }
 
     if (playerOneChoice === 'rock' && playerTwoChoice === 'paper') {
@@ -220,7 +220,7 @@ function main() {
       document.querySelector('.rock-player').classList.add('player-border')
       document.querySelector('.lizard-p2').classList.add('p2-border')
       document.querySelector('.results-text').innerHTML =
-        '<img src="https://i.gifer.com/7NSh.gif" width="300px" style="border: solid rgb(55, 132, 214)">'
+        '<img src="https://i.gifer.com/7NSh.gif" width="250px" style="border: solid rgb(55, 132, 214)">'
       document.querySelector('.results-texts').innerHTML = 'Player 1 wins!'
     }
 
@@ -228,10 +228,10 @@ function main() {
       document.querySelector('.rock-player').classList.add('player-border')
       document.querySelector('.yoda-p2').classList.add('p2-border')
       document.querySelector('.results-text').innerHTML =
-        '<img src="https://thumbs.gfycat.com/CompassionateSolidGaur-max-1mb.gif" width="300px" style="border: solid rgb(229, 17, 21)">'
+        '<img src="https://i.pinimg.com/originals/23/cb/16/23cb16496f327948d1e4a3b3d6632c74.gif" width="300px" style="border: solid rgb(229, 17, 21)">'
       document.querySelector('.results-texts').innerHTML = 'Player 2 wins!'
     }
-    // Paper
+    // Player One chooses Paper
     if (playerOneChoice === 'paper' && playerTwoChoice === 'rock') {
       document.querySelector('.paper-player').classList.add('player-border')
       document.querySelector('.rock-p2').classList.add('p2-border')
@@ -245,7 +245,7 @@ function main() {
       document.querySelector('.paper-p2').classList.add('p2-border')
       document.querySelector('.results-text').innerHTML =
         '<img src="https://i.pinimg.com/originals/98/58/a0/9858a0097510206aaff4c3aeafe32e3d.gif" width="300px" style="border: solid #FFFFFF">'
-      document.querySelector('.results-texts').innerHTML = "It's a tie!"
+      document.querySelector('.results-texts').innerHTML = 'Tie!'
     }
 
     if (playerOneChoice === 'paper' && playerTwoChoice === 'scissors') {
@@ -271,12 +271,12 @@ function main() {
         '<img src="https://m0.joe.ie/wp-content/uploads/2017/11/29164846/Impressive.gif" width="300px" style="border: solid rgb(55, 132, 214)">'
       document.querySelector('.results-texts').innerHTML = 'Player 1 wins!'
     }
-    // Scissors
+    // Player One chooses Scissors
     if (playerOneChoice === 'scissors' && playerTwoChoice === 'rock') {
       document.querySelector('.scissors-player').classList.add('player-border')
       document.querySelector('.rock-p2').classList.add('p2-border')
       document.querySelector('.results-text').innerHTML =
-        '<img src="https://imagesvc.meredithcorp.io/v3/mm/gif?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F13%2F2016%2F03%2F09%2Fchewie-hug.gif" width="300px" style="border: solid rgb(229, 17, 21)">'
+        '<img src="https://imagesvc.meredithcorp.io/v3/mm/gif?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F13%2F2016%2F03%2F09%2Fchewie-hug.gif" width="230px" style="border: solid rgb(229, 17, 21)">'
       document.querySelector('.results-texts').innerHTML = 'Player 2 wins!'
     }
 
@@ -293,14 +293,14 @@ function main() {
       document.querySelector('.scissors-p2').classList.add('p2-border')
       document.querySelector('.results-text').innerHTML =
         '<img src="https://i.pinimg.com/originals/98/58/a0/9858a0097510206aaff4c3aeafe32e3d.gif" width="300px" style="border: solid #FFFFFF">'
-      document.querySelector('.results-texts').innerHTML = "It's a tie!"
+      document.querySelector('.results-texts').innerHTML = 'Tie!'
     }
 
     if (playerOneChoice === 'scissors' && playerTwoChoice === 'lizard') {
       document.querySelector('.scissors-player').classList.add('player-border')
       document.querySelector('.lizard-p2').classList.add('p2-border')
       document.querySelector('.results-text').innerHTML =
-        '<img src="https://i.pinimg.com/originals/9c/5d/08/9c5d08a88b7986777a9d883493254d5b.gif" width="300px" style="border: solid rgb(55, 132, 214)">'
+        '<img src="https://i.pinimg.com/originals/9c/5d/08/9c5d08a88b7986777a9d883493254d5b.gif" width="250px" style="border: solid rgb(55, 132, 214)">'
       document.querySelector('.results-texts').innerHTML = 'Player 1 wins!'
     }
 
@@ -311,7 +311,7 @@ function main() {
         '<img src="https://i.chzbgr.com/full/9031977472/hD9728A7A/reaction-gif-of-sand-people-celebrating-trimumph-in-star-wars-movie" width="300px" style="border: solid rgb(229, 17, 21)">'
       document.querySelector('.results-texts').innerHTML = 'Player 2 wins!'
     }
-    // Lizard
+    // Player One chooses Lizard
     if (playerOneChoice === 'lizard' && playerTwoChoice === 'rock') {
       document.querySelector('.lizard-player').classList.add('player-border')
       document.querySelector('.rock-p2').classList.add('p2-border')
@@ -338,7 +338,7 @@ function main() {
       document.querySelector('.lizard-p2').classList.add('p2-border')
       document.querySelector('.results-text').innerHTML =
         '<img src="https://i.pinimg.com/originals/98/58/a0/9858a0097510206aaff4c3aeafe32e3d.gif" width="300px" style="border: solid #FFFFFF">'
-      document.querySelector('.results-texts').innerHTML = "It's a tie!"
+      document.querySelector('.results-texts').innerHTML = 'Tie!'
     }
     if (playerOneChoice === 'lizard' && playerTwoChoice === 'yoda') {
       document.querySelector('.lizard-player').classList.add('player-border')
@@ -347,12 +347,12 @@ function main() {
         '<img src="https://i.gifer.com/WEx9.gif" width="300px" style="border: solid rgb(55, 132, 214)">'
       document.querySelector('.results-texts').innerHTML = 'Player 1 wins!'
     }
-    // Yoda
+    // Player One chooses Yoda
     if (playerOneChoice === 'yoda' && playerTwoChoice === 'rock') {
       document.querySelector('.yoda-player').classList.add('player-border')
       document.querySelector('.rock-p2').classList.add('p2-border')
       document.querySelector('.results-text').innerHTML =
-        '<img src="https://imperialtalker.files.wordpress.com/2019/04/coruscant-victory.gif?w=400&zoom=2" width="300px" style="border: solid rgb(55, 132, 214)">'
+        '<img src="https://imperialtalker.files.wordpress.com/2019/04/coruscant-victory.gif?w=400&zoom=2" width="250px" style="border: solid rgb(55, 132, 214)">'
       document.querySelector('.results-texts').innerHTML = 'Player 1 wins!'
     }
     if (playerOneChoice === 'yoda' && playerTwoChoice === 'paper') {
@@ -381,7 +381,7 @@ function main() {
       document.querySelector('.yoda-p2').classList.add('p2-border')
       document.querySelector('.results-text').innerHTML =
         '<img src="https://i.pinimg.com/originals/98/58/a0/9858a0097510206aaff4c3aeafe32e3d.gif" width="300px" style="border: solid #FFFFFF">'
-      document.querySelector('.results-texts').innerHTML = "It's a tie!"
+      document.querySelector('.results-texts').innerHTML = 'Tie!'
     }
   }
 }

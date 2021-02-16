@@ -75,11 +75,12 @@ function main() {
   // Declare Winner
 
   const declareWinner = () => {
+    // Rock
     if (playerChoice === 'rock' && computerChoice === 'rock') {
       document.querySelector('.rock-computer').classList.add('computer-border')
       document.querySelector('.results-text').innerHTML =
         '<img src="https://i.pinimg.com/originals/98/58/a0/9858a0097510206aaff4c3aeafe32e3d.gif" width="300px" style="border: solid #FFFFFF">'
-      document.querySelector('.results-texts').innerHTML = "It's a tie!"
+      document.querySelector('.results-texts').innerHTML = 'Tie!'
     }
 
     if (playerChoice === 'rock' && computerChoice === 'paper') {
@@ -97,7 +98,7 @@ function main() {
         '<img src="https://thumbs.gfycat.com/CompassionateSolidGaur-max-1mb.gif" width="300px" style="border: solid rgb(55, 132, 214)">'
       document.querySelector('.results-texts').innerHTML = 'Winner!'
     }
-
+    // paper
     if (playerChoice === 'paper' && computerChoice === 'rock') {
       document.querySelector('.rock-computer').classList.add('computer-border')
       document.querySelector('.results-text').innerHTML =
@@ -109,7 +110,7 @@ function main() {
       document.querySelector('.paper-computer').classList.add('computer-border')
       document.querySelector('.results-text').innerHTML =
         '<img src="https://i.pinimg.com/originals/98/58/a0/9858a0097510206aaff4c3aeafe32e3d.gif" width="300px" style="border: solid #FFFFFF">'
-      document.querySelector('.results-texts').innerHTML = "It's a tie!"
+      document.querySelector('.results-texts').innerHTML = 'Tie!'
     }
 
     if (playerChoice === 'paper' && computerChoice === 'scissors') {
@@ -120,7 +121,7 @@ function main() {
         '<img src="https://media.giphy.com/media/3o84szW0PrWZyUv0mA/giphy.gif" width="300px" style="border: solid rgb(229, 17, 21)">'
       document.querySelector('.results-texts').innerHTML = 'You lose!'
     }
-
+    // Scissors
     if (playerChoice === 'scissors' && computerChoice === 'rock') {
       document.querySelector('.rock-computer').classList.add('computer-border')
       document.querySelector('.results-text').innerHTML =
@@ -141,7 +142,7 @@ function main() {
         .classList.add('computer-border')
       document.querySelector('.results-text').innerHTML =
         '<img src="https://i.pinimg.com/originals/98/58/a0/9858a0097510206aaff4c3aeafe32e3d.gif" width="300px" style="border: solid #FFFFFF">'
-      document.querySelector('.results-texts').innerHTML = "It's a tie!"
+      document.querySelector('.results-texts').innerHTML = 'Tie!'
     }
   }
 }

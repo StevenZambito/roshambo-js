@@ -7,13 +7,14 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/screen.css" />
   </head>
+
   <body>
     <header>
       <h1 class="rps-title">Rock Paper Sabers</h1>
     </header>
 
     <main class="player-computer">
-      <div class="sides">
+      <section class="sides">
         <h2 class="player-title">You</h2>
 
         <button class="rock-player">
@@ -36,28 +37,31 @@
             src="https://clipartart.com/images/light-saber-border-clipart-star-wars-frame-3.png"
           />
         </button>
-      </div>
+      </section>
 
-      <div class="versus">
-        <p class="results-text">
+      <section class="versus">
+        <div class="results-text choose">
           <img
             src="https://i.gifer.com/3PvG.gif"
             width="300px"
             style="border: solid #ffe81f"
           />
-        </p>
-        <p class="results-texts">Choose!</p>
+        </div>
+
+        <h1 class="results-texts">Choose!</h1>
+
         <div class="reset-button">
           <button class="reset">Reset</button>
         </div>
+
         <div>
-          <button>
+          <button class="version-two-game">
             <a href="/game2.html">Play Enhanced Game</a>
           </button>
         </div>
-      </div>
+      </section>
 
-      <div class="sides">
+      <section class="sides">
         <h2 class="computer-title">Computer</h2>
 
         <button class="rock-computer">
@@ -80,7 +84,7 @@
             src="https://clipartart.com/images/light-saber-border-clipart-star-wars-frame-3.png"
           />
         </button>
-      </div>
+      </section>
     </main>
 
     <script src="/main.js" charset="utf-8"></script>
