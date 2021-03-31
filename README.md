@@ -4,7 +4,7 @@
 
 ## Assignment Overview:
 
-For this assignment, the goal was to create a Roshambo (Rock-Paper-Scissors) game.
+For this assignment, I created a Roshambo (Rock-Paper-Scissors) game.
 
 ## Summary
 
